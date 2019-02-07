@@ -1,0 +1,231 @@
+body{
+    padding:0;
+    margin:0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+@font-face {
+    font-family: fnt;
+    src: url(../fonts/gheagpalatbld.ttf);
+}
+.fnt{
+    font-family: fnt;
+}
+
+
+
+
+
+
+
+/************zoom plugin************************************/
+.round-loupe{
+   border-radius: 75px;
+   border: 5px solid #F0F0F0;
+   cursor: pointer;
+}
+/**************************************************************/
+
+
+
+
+.cls_sidebar{
+    position: relative;
+    background: white;
+    border:1px solid #eeeeee;
+    border-radius: 15px;
+    overflow: hidden;
+    margin:5px;
+    cursor: pointer;
+}
+.cls_sidebar img{
+    width:30px; 
+    height:30px; 
+    padding:4px 1px;  
+}
+.cls_sidebar span{
+    position: absolute;
+    top:8px;
+    left:34px;
+    font-family: fnt;
+    font-size:16px;
+    color:#2c3e50;
+}
+.cls_sidebar hr{    
+    border: 1px solid #eeeeee;
+    margin:0 auto;
+    width:90%;
+}
+.cls_sidebar div{
+    font-family: fnt;    
+    font-size: 14px;
+    padding: 0 10px;    
+    color:#2c3e50;
+    line-height: 20px;
+}
+
+
+
+
+
+/*-------------tab menu style--------------*/
+#tab_menu{
+  width: 800px;
+  height: 36px;
+  margin:0;
+  padding: 0;
+}
+
+#tab_menu li{
+  position: absolute;
+  top:0;
+  font-family: fnt;
+  font-size:16px;
+  width:170px;
+  height: 20px;
+  list-style-type: none;
+  display: inline-block;
+  padding: 8px 0px;
+  text-align: center;
+  padding-right: 30px;
+  cursor:pointer;
+  background-image: url("../img/tab_unselect.png");
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  color:#b7b7b7;
+}
+
+#tab_for_icons_group{
+    position:relative; width:800px; 
+    height:140px;
+    background:#eeeeee; 
+    border-radius:15px;
+    border-top-left-radius:0;
+}
+
+.tab_for_icons{
+    position: absolute; 
+    top:10px;
+    left:0;
+    width:800px; 
+    height:142px;     
+    border-radius: 15px;
+    border-top-left-radius:0;
+    background: #eeeeee; 
+    z-index: 1000;
+}
+
+
+
+
+
+#container_group{
+    position: relative;
+    width: 1000px;
+    height:776px;  
+    margin: auto auto; 
+}
+#container_workplace{
+    position: relative;
+    width:800px; 
+    height: 776px; 
+    float:left
+}
+#container_sidebar{
+    position: relative;
+    width:200px; 
+    height: 776px; 
+    float:right
+}
+#part_laboratory{
+    position:relative;
+    top:10px;
+    width: 800px; 
+    height:600px; 
+    float:left; 
+    background-image: url("../img/laboratory.jpg");
+    background-repeat: no-repeat; 
+    border-radius: 10px;
+}
+
+.tab_icons_group{
+    float:left;
+}
+.lab_icons_group{
+    width:105px; 
+    height:100px;
+    border:2px dashed #656565;     
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    margin:0px 14px;
+    margin-left: 0;
+    background: #FFF;
+    border-radius: 8px;
+}
+.lab_titles{
+    width: 105px;
+    height: 40px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: fnt;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    background: #dcdcdc;
+}
+.lab_inocs{
+    position: absolute;
+    top:0;
+    left:0;
+    margin:0;
+    padding:0;
+}
+
+
+
+
+/********************the page sizes****************/
+@media (max-width: 1023px){ 
+    #container_group{
+      width:784px;
+    }
+    #container_workplace, #part_laboratory{
+      width:100%;
+    }
+    .cls_sidebar{
+      width: 98%;
+      height:68px; 
+    }
+    #container_sidebar{
+      width: 100%;
+    }
+    #tab_menu, .tab_for_icons, #tab_for_icons_group{
+      width: 100%;
+    }
+}
+@media (min-width: 1024px){ 
+    #container_group{
+      width:1000px;
+    }
+    #container_workplace, #part_laboratory{
+      width:800px;
+    }
+    .cls_sidebar{
+      width: 188px;
+      height:187px; 
+    }
+    #container_sidebar{
+      width: 200px;
+    }
+    #tab_menu, .tab_for_icons, #tab_for_icons_group{
+      width: 800px;
+    }
+}
+/***************************************************/

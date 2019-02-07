@@ -1,0 +1,43 @@
+
+
+#solt{
+	width: 40px;
+    height: 20px;
+}
+#mixer{
+	z-index: 500;
+}
+
+#box{
+   z-index: 200;
+}
+#box_head{
+   z-index: 201;
+}
+
+#chemical_balance{
+	z-index: 300;
+}
+#chemical_balance_plate_group{
+	z-index: 301;
+}
+#gram, #milligram{
+	z-index: 302;
+}
+
+#colba{
+	z-index: 20;
+}
+
+#spoon{
+	z-index: 306;
+}
+#plate_solt{
+	z-index: 101;
+}
+#cup_first{
+	z-index: 404;
+}
+#measuring_glass{
+	z-index: 405;
+}
